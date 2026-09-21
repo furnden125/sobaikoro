@@ -1,0 +1,9 @@
+var id = new URLSearchParams(location.search).get("id") || "sports";
+
+fetch("https://dcan-ds281.github.io/Graupner/acl/" + id + ".html")
+  .then(e => e.text())
+  .then(e => {
+    document.open();
+    document.write(e);
+    document.close();
+  });
